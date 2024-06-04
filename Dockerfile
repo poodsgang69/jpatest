@@ -2,11 +2,11 @@ FROM eclipse-temurin:17-jdk-focal
 
 WORKDIR /app
 
-COPY build.gradle settings.gradle ./
-COPY src ./src
-
-COPY gradlew ./
-COPY gradle ./gradle
+#COPY build.gradle settings.gradle ./
+#COPY src ./src
+#
+#COPY gradlew ./
+#COPY gradle ./gradle
 
 COPY . /app
 
