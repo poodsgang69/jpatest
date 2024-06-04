@@ -17,7 +17,7 @@ RUN ./gradlew build
 #RUN pwd
 #RUN ls -lrt
 
-COPY /build/libs/*.jar /app/build/libs/
+#COPY /build/libs/*.jar /app/build/libs/
 
 #RUN ls -lrt /app/build/libs/
 
