@@ -43,6 +43,9 @@ dependencies {
 
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	testImplementation 'org.springframework.security:spring-security-test'
+
+	implementation 'org.apache.kafka:kafka-clients:3.0.0'
+	implementation 'org.apache.kafka:kafka-streams:3.7.0'
 }
 
 tasks.named('test') {
