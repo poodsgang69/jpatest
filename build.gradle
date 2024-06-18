@@ -41,11 +41,13 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 
-	implementation 'org.springframework.boot:spring-boot-starter-security'
-	testImplementation 'org.springframework.security:spring-security-test'
+//	implementation 'org.springframework.boot:spring-boot-starter-security'
+//	testImplementation 'org.springframework.security:spring-security-test'
 
 	implementation 'org.apache.kafka:kafka-clients:3.0.0'
 	implementation 'org.apache.kafka:kafka-streams:3.7.0'
+
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '3.3.0'
 }
 
 tasks.named('test') {
