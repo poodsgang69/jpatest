@@ -15,7 +15,7 @@ public class TestProducer {
 
         Producer<String, String> producer = new KafkaProducer<>(props);
 
-        ProducerRecord<String, String> record = new ProducerRecord<>("NEW_TOPIC", "STREAM2", "GAP");
+        ProducerRecord<String, String> record = new ProducerRecord<>("NEW_TOPIC", "Message3", "Lagger Lagger Lagger");
 
         producer.send(record, new Callback() {
             public void onCompletion(RecordMetadata metadata, Exception exception) {
