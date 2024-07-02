@@ -3,6 +3,8 @@ name: Gradle Wrapper Build
 on:
   pull_request:
     branches: [ "master" ]
+    paths-ignore:
+      - '**/README.*'
 
 
   workflow_dispatch:
